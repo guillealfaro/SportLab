@@ -1,0 +1,97 @@
+.section-bio {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(235, 233, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-bio p {
+  margin-top: 20px;
+  color: black;
+  font-size: 35px;
+}
+
+.section-bio .little {
+  margin: 10px;
+  color: black;
+  font-size: 24px;
+}
+
+.section-bio a {
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  background-color: transparent;
+  padding: 13px 13px;
+}
+.section-bio a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.8s;
+}
+.next-programs {
+  margin-left: 400px;
+  margin-top: 150px;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 0.712);
+}
+
+@media screen and (max-width: 1050px) {
+  .next-programs {
+    margin-left: 250px;
+    font-size: 18px;
+  }
+
+  .section-bio p {
+    font-size: 30px;
+  }
+  .section-bio .little {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .next-programs {
+    margin-left: 200px;
+    font-size: 15px;
+  }
+  .section-bio p {
+    font-size: 25px;
+  }
+  .section-bio .little {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 655px) {
+  .next-programs {
+    margin-left: 1px;
+    font-size: 15px;
+  }
+  .section-bio p {
+    display: none;
+  }
+
+  .section-bio .little {
+    font-size: 15px;
+    display: flex;
+  }
+  .section-bio a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    background-color: transparent;
+    padding: 9px 9px;
+  }
+  @media screen and (max-width: 485px) {
+    .next-programs {
+      margin-left: 1px;
+      margin-top: 60px;
+    }
+  }
+}

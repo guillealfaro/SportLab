@@ -1,0 +1,75 @@
+.imagen {
+  cursor: pointer;
+  position: relative;
+  height: 390px;
+  width: 350px;
+  .imagenandres {
+    width: 100%;
+  }
+  .imagenguilababy {
+    width: 100%;
+  }
+  .imagenmaeadulto {
+    width: 100%;
+  }
+}
+
+.container {
+  background-color: rgb(177, 175, 175);
+  height: 600px;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.overlay > * {
+  transform: translateY(23px);
+  transition: transform 0.5s;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay:hover > * {
+  transform: translateY(0);
+}
+
+.imagen .complete {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.imagen .prim-text {
+  font-size: 1rem;
+}
+.imagen a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  padding: 13px 13px;
+}
+.imagen a:hover {
+  color: black;
+  background-color: white;
+  transition: 0.8s;
+  border: 1px solid white;
+}
+.price {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}

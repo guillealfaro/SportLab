@@ -1,0 +1,49 @@
+.contain {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: row;
+  background-image: url("andreEdit.png");
+  background-size: cover;
+  background-position-y: center;
+}
+.space {
+  width: 55%;
+  height: 100%;
+}
+.column {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 40%;
+}
+.quote {
+  margin-top: 70px;
+}
+.quote p {
+  font-size: 30px;
+  color: white;
+}
+.quote2 p {
+  font-size: 20px;
+  color: white;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 170px;
+  margin-left: 20px;
+  list-style-type: none; /*get rid of the <a> dots*/
+}
+.insta {
+  width: 40px;
+}
+.tiktok {
+  width: 40px;
+}
+.whats {
+  width: 40px;
+}

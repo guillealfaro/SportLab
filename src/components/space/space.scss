@@ -1,0 +1,13 @@
+.spacebetween {
+  width: 100%;
+  height: 180px;
+  background-color: rgb(177, 175, 175);
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+
+  .spaceflex {
+    margin-right: 15%;
+    color: rgb(58, 58, 58);
+  }
+}

@@ -1,0 +1,25 @@
+.base {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .top {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+  }
+  .owner {
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+  }
+}

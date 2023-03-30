@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Imported;
+  src: url("../assets/font/Rufner.otf");
+}
+
+* {
+  font-family: Imported;
+  box-sizing: border-box; /*reset the margin and padding*/
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 25px;
+  position: relative;
+  width: 25%;
+}
+.logo .loguito {
+  width: 100%;
+}
+
+.links {
+  position: relative;
+  margin-right: 20px;
+
+  a {
+    padding-bottom: 1rem;
+  }
+}
+
+.active a {
+  margin: 10px;
+  font-size: 13px;
+  text-decoration: none; /*get rid of the sublines*/
+  color: white;
+}
+
+.active a:hover {
+  border-bottom: 0.4px white solid;
+}
+
+.active {
+  top: 0;
+  width: 100%;
+  height: 13%;
+  background-color: black;
+  box-shadow: 0 0 3px rgb(82, 81, 81);
+  position: fixed;
+  transition: 0.6s linear;
+  z-index: 40;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 37px;
+  z-index: 40;
+  position: fixed;
+  top: -50px;
+  transition: 0.6s linear;
+}
+.active ul {
+  list-style-type: none; /*get rid of the <a> dots*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.active .join-now {
+  cursor: pointer;
+  margin-left: 15px;
+  border: 1px solid #a29345;
+  font-size: 12px;
+  background-color: black;
+  border-color: #a29345;
+  padding: 10px 10px;
+  color: #a29345;
+  transition: 0.8s;
+}
+
+.active {
+  .join-now:hover {
+    background-color: #a29345;
+    color: white;
+  }
+  .nav-btn {
+    display: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+  }
+}
+@media screen and (max-width: 910px) {
+  .active {
+    .nav-btn {
+      display: flex;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+
+    .links {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 40%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: black;
+      transition: 1s;
+      transform: translateY(-150vh);
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    li {
+      margin: 8px;
+    }
+
+    .responsive_nav {
+      transform: none;
+    }
+
+    .nav-btn-close {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+    .join-now {
+      margin-top: 5px;
+    }
+  }
+}
